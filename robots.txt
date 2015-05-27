@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://amritdeep.github.io/sitemap.xml 
+Sitemap: http://amritdeep.github.io/sitemap.xml 

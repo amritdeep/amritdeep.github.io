@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Amrit Deep Dhungana]]></title>
-  <link href="https://amritdeep.github.io/atom.xml" rel="self"/>
-  <link href="https://amritdeep.github.io/"/>
-  <updated>2015-05-27T21:46:41+05:45</updated>
-  <id>https://amritdeep.github.io/</id>
+  <link href="http://amritdeep.github.io/atom.xml" rel="self"/>
+  <link href="http://amritdeep.github.io/"/>
+  <updated>2015-05-27T22:02:14+05:45</updated>
+  <id>http://amritdeep.github.io/</id>
   <author>
     <name><![CDATA[amritdeep]]></name>
     
