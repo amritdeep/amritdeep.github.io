@@ -4,7 +4,7 @@
   <title><![CDATA[Amrit Deep Dhungana]]></title>
   <link href="http://amritdeep.github.io/atom.xml" rel="self"/>
   <link href="http://amritdeep.github.io/"/>
-  <updated>2015-05-28T12:23:45+05:45</updated>
+  <updated>2015-05-29T15:52:12+05:45</updated>
   <id>http://amritdeep.github.io/</id>
   <author>
     <name><![CDATA[amritdeep]]></name>
@@ -12,5 +12,84 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Creating Rakefile]]></title>
+    <link href="http://amritdeep.github.io/blog/2015/05/29/creating-rakefile/"/>
+    <updated>2015-05-29T14:26:20+05:45</updated>
+    <id>http://amritdeep.github.io/blog/2015/05/29/creating-rakefile</id>
+    <content type="html"><![CDATA[<p>Creating RakeFiles</p>
+
+<hr />
+
+<p>First Create folder where you want to do rake task. Go to that folder. Before, creating Rakefile let us create Gemfile because we need to install rake gems.</p>
+
+<p><code> mkdir Rakefolder </code></p>
+
+<p><code> cd Rakefolder </code></p>
+
+<p><code> touch Gemfile </code></p>
+
+<p>Add rake gem in Gemfile.</p>
+
+<p><code> echo &ldquo;source "<a href="https://rubygems.org">https://rubygems.org</a>&rdquo;&ldquo; >> Gemfile </code></p>
+
+<p><code> echo &ldquo;gem &lsquo;rake&rsquo;, &lsquo;~> 10.0&rsquo;&rdquo; >> Gemfile </code></p>
+
+<p>Let bundle our application.</p>
+
+<p><code> bunlde </code></p>
+
+<p>We have install rake gem for our application. Now, we are ready to go.</p>
+
+<p>After that, Create Rakefile</p>
+
+<p><code> touch Rakefile </code></p>
+
+<p>We require rubygems and rake in Rake file</p>
+
+<p><code> echo &ldquo;require &lsquo;rubygems&rsquo; &rdquo; >> Rakefile </code></p>
+
+<p><code> echo &ldquo;require &lsquo;rake&rsquo;&rdquo; >> Rakefile </code></p>
+
+<p>Open the Rakefile with editor. In my case, I am using Sublime. It depens upon you which editor you are using whether its vim, vi, nano, notepad, text mate …. etc.</p>
+
+<p>Now, Lets begin the story</p>
+
+<p>Let describe the task we are going to do in our Rakefile. For example, I am going to prin my name</p>
+
+<p><code> desc &ldquo;Print Yours Name&rdquo; </code></p>
+
+<p>and Save it. Still our task isn’t complete. So, lets begin task.</p>
+
+<p><code> task :name, [:first_name] do |t, args| </code></p>
+
+<p><code> end </code></p>
+
+<p>Let make our task to print our name.</p>
+
+<p><code> desc &ldquo;Print Yours Name&rdquo; </code> </br>
+<code> task :name, [:first_name] do |t, args| </code> </br>
+<code>  puts &ldquo;#{args.first_name}&rdquo; </code> </br>
+<code> end </code></p>
+
+<p></code></p>
+
+<p>We are able to write our first Rakefile. But we to test it.</p>
+
+<p>Open you terminal and go to your project directory.</p>
+
+<p><code> cd ~/Rakefolder/ </code></p>
+
+<p>Since, we have alreday bundle our application, we don&rsquo;t need to bundle it again but if you want to bundle it, choice is yours.</p>
+
+<p><code> bundle </code></p>
+
+<p>Lets make our rake task</p>
+
+<p><code> rake name[amrit] </code> </br>
+<code> amrit </code></p>
+]]></content>
+  </entry>
   
 </feed>
